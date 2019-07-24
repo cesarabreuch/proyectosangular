@@ -1,0 +1,10 @@
+<div class="container">
+
+    <h1 class="text-center">Movies</h1>
+
+    <app-frame [chart]="newMovies | slice:0:6" title="Peliculas en cartelera"></app-frame>
+    <app-frame [chart]="popularMovies | slice:0:6" title="Peliculas populares"></app-frame>
+    <app-frame [chart]="kidMovies | slice:0:6" title="Peliculas para niños"></app-frame>
+
+
+</div>

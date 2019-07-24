@@ -1,2 +1,5 @@
 # proyectosangular
-mis proyectos angular
+
+Proyectos desarrollados en Angular.
+
+Cesar Abreu

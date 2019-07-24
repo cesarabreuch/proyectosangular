@@ -1,0 +1,24 @@
+<div class="container main-container animated fadeIn" *ngIf="movie">
+
+    <h1>{{movie.title}}</h1>
+
+    <div class="row">
+        <div class="col-md-5">
+            <img class="img-thumbnail img-fluid" [src]="movie | image:true" [alt]="">
+        </div>
+        <div class="col-md-7">
+            <h3>Sinopsis</h3>
+            <hr>
+            <p class="text-justify">{{movie.overview}}</p>
+            <div *ngIf="movie.tagline!=''">
+                <h4>Frase Celebre</h4>
+                <q>{{movie.tagline}}</q>
+            </div>
+            <p>Popularidad: <span class="badge badge-warning ">{{movie.vote_average | number:'.0-0'}}/10</span></p>
+            <p>Fecha de Lanzamiento: <span class="badge badge-warning">{{movie.release_date | date}}</span></p>
+            <button [routerLink]=" [ '/'+parameters] " type="button " class="btn btn-outline-warning btn-lg ">Atras</button>
+        </div>
+    </div>
+
+
+</div>

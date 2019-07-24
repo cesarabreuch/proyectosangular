@@ -1,0 +1,22 @@
+<div class="card" style="width: 18rem;">
+
+    <img [src]="profile.picture" class="card-img-top" alt="...">
+
+    <div class="card-body">
+
+        <h5 class="card-title">{{profile.nickname}}</h5>
+        <p class="card-text">{{profile.updated_at | date:'dd mm yyyy'}}</p>
+        <a routerLink="['/home']" routerLinkActive="router-link-active" class="btn btn-primary">regresar</a>
+
+    </div>
+
+</div>
+
+<br><br>
+<hr>
+
+<div class="row">
+    <div class="col-md-5">
+        {{ profile | json }}
+    </div>
+</div>
